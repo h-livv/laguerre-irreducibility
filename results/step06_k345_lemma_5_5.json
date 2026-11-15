@@ -1,0 +1,3768 @@
+{
+ "step": "step06_k345_lemma_5_5",
+ "checkpoints": [
+  {
+   "description": "Stage A: number of n with P(Delta(n-k+1,k)) <= 31, n >= 2k, for k = 3, 4, 5",
+   "paper": [
+    87,
+    46,
+    31
+   ],
+   "ours": [
+    87,
+    46,
+    31
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage B: the set T-tilde",
+   "paper": [
+    [
+     13,
+     842,
+     5
+    ],
+    [
+     14,
+     842,
+     5
+    ],
+    [
+     15,
+     842,
+     5
+    ],
+    [
+     22,
+     358,
+     5
+    ],
+    [
+     23,
+     358,
+     5
+    ],
+    [
+     26,
+     842,
+     5
+    ],
+    [
+     58,
+     358,
+     5
+    ],
+    [
+     66,
+     842,
+     5
+    ],
+    [
+     156,
+     358,
+     5
+    ],
+    [
+     156,
+     842,
+     5
+    ]
+   ],
+   "ours": [
+    [
+     13,
+     842,
+     5
+    ],
+    [
+     14,
+     842,
+     5
+    ],
+    [
+     15,
+     842,
+     5
+    ],
+    [
+     22,
+     358,
+     5
+    ],
+    [
+     23,
+     358,
+     5
+    ],
+    [
+     26,
+     842,
+     5
+    ],
+    [
+     58,
+     358,
+     5
+    ],
+    [
+     66,
+     842,
+     5
+    ],
+    [
+     156,
+     358,
+     5
+    ],
+    [
+     156,
+     842,
+     5
+    ]
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage C: number of n after omega_11 <= 1 and nu_p <= 1, for k = 3, 4, 5",
+   "paper": [
+    31,
+    14,
+    6
+   ],
+   "ours": [
+    31,
+    14,
+    6
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D: pairs (n, k) with P(Delta(n-k+1,k)) < 11",
+   "paper": [
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     9,
+     3
+    ],
+    [
+     9,
+     4
+    ],
+    [
+     10,
+     3
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     10,
+     5
+    ],
+    [
+     16,
+     3
+    ]
+   ],
+   "ours": [
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     9,
+     3
+    ],
+    [
+     9,
+     4
+    ],
+    [
+     10,
+     3
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     10,
+     5
+    ],
+    [
+     16,
+     3
+    ],
+    [
+     50,
+     3
+    ]
+   ],
+   "matches": false,
+   "explanation": "The paper says P(Delta(n-k+1,k)) >= 11 for all n >= 11 except (16, 3). But (n, k) = (50, 3) gives 48 * 49 * 50, whose largest prime is 7. The paper's count 186 for k = 3 matches ours only without n = 50, so this pair does not seem to be covered by the paper's counts. It is treated here in Stage F like the other small pairs (38 extra cases, all closed by factorisation)."
+  },
+  {
+   "description": "Stage D: number of pairs (n, a) after Lemma 5.3, for k = 3, 4, 5",
+   "paper": [
+    186,
+    96,
+    87
+   ],
+   "ours": [
+    186,
+    96,
+    87
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D: number of triples including T-tilde",
+   "paper": 379,
+   "ours": 379,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage E: triples with P(Delta(n+a-k+1,k)) < 37",
+   "paper": [
+    [
+     25,
+     527,
+     3
+    ],
+    [
+     65,
+     167,
+     3
+    ]
+   ],
+   "ours": [
+    [
+     25,
+     527,
+     3
+    ],
+    [
+     65,
+     167,
+     3
+    ]
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage E: survivors of Lemma 5.4(i)",
+   "paper": [
+    [
+     25,
+     527,
+     3
+    ],
+    [
+     56,
+     845,
+     3
+    ],
+    [
+     65,
+     167,
+     3
+    ]
+   ],
+   "ours": [
+    [
+     25,
+     527,
+     3
+    ],
+    [
+     56,
+     845,
+     3
+    ],
+    [
+     65,
+     167,
+     3
+    ]
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage F: number of pairs (n, a) for the paper's small pairs, for k = 3, 4, 5",
+   "paper": [
+    228,
+    36,
+    2
+   ],
+   "ours": [
+    228,
+    36,
+    2
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage F: number of distinct (n, a) for the paper's small pairs",
+   "paper": 97,
+   "ours": 228,
+   "matches": false,
+   "explanation": "UNEXPLAINED. The 228 pairs for k = 3 are already distinct, so the number of distinct (n, a) cannot be below 228. We factorise all of them, so nothing is lost."
+  }
+ ],
+ "certificates": [
+  {
+   "n": 25,
+   "a": 527,
+   "k": 3,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 56,
+   "a": 845,
+   "k": 3,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 7,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      56,
+      9
+     ]
+    ],
+    "rightmost_slope": "8/49"
+   }
+  },
+  {
+   "n": 65,
+   "a": 167,
+   "k": 3,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      55,
+      13
+     ],
+     [
+      65,
+      16
+     ]
+    ],
+    "rightmost_slope": "3/10"
+   }
+  },
+  {
+   "n": 6,
+   "a": 51,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 52,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 58,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 59,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 60,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 64,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 71,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 72,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 86,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 87,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 94,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 110,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 111,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 115,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 120,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 139,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 148,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 149,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 150,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 156,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 164,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 165,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 170,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 203,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 204,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 226,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 284,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 318,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 319,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 336,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 337,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 346,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 386,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 436,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 489,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 490,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 523,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 546,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 709,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 778,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 51,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 57,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 58,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 59,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 63,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 70,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 71,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 85,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 86,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 93,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 109,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 110,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 114,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 119,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 138,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 147,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 148,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 149,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 155,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 163,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 164,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 169,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 202,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 203,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 225,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 283,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 317,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 318,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 335,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 336,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 345,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 385,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 435,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 488,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 489,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 522,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 545,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 708,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "a": 777,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     7
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 56,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 57,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 58,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 62,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 69,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 70,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 84,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 85,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 92,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 108,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 109,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 113,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 118,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 137,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 146,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 147,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 148,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 154,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 162,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 163,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 168,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 201,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 202,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 224,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 282,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 316,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 317,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 334,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 335,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 344,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 384,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 434,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 487,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 488,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 521,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 544,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 707,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 776,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 55,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 56,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 57,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 61,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 68,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 69,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 83,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 84,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 91,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 107,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 108,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 112,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 117,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 136,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 145,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 146,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 147,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 153,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 161,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 162,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 167,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 200,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 201,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 223,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 281,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 315,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 316,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 333,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 334,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 343,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 383,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 433,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 486,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 487,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 520,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 543,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 706,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 775,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 54,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 55,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 56,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 60,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 67,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 68,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 82,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 83,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 90,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 106,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 107,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 111,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 116,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 135,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 144,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 145,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 146,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 152,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 160,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 161,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 166,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 199,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 200,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 222,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 280,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 314,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 315,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 332,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 333,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 342,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 382,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 432,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 485,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 486,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 519,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 542,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 705,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 774,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 54,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 61,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 62,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 76,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 77,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 84,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 100,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 101,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 105,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 110,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 129,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 138,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 139,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 140,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 146,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 154,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 155,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 160,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 193,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 194,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 216,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 274,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 308,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 309,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 326,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 327,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 336,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 376,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 426,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 479,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 480,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 513,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 536,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 699,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 768,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 66,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 67,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 71,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 76,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 95,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 104,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 105,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 106,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 112,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 120,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 121,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 126,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 138,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 139,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 140,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 159,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 160,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 182,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 240,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 274,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 275,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 292,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 293,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 302,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 326,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 327,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 328,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 342,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 392,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 445,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 446,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 479,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 502,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 665,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 734,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 750,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 797,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 50,
+   "a": 938,
+   "k": 3,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     50
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 57,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 58,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 70,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 85,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 109,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 147,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 148,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 163,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 202,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 317,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 335,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 488,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 56,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 57,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 69,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 84,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 108,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 146,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 147,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 162,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 201,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 316,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 334,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 487,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 55,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 56,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 68,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 83,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 107,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 145,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 146,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 161,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 200,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 315,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 333,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 486,
+   "k": 4,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 56,
+   "k": 5,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 146,
+   "k": 5,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  }
+ ],
+ "extra": {}
+}

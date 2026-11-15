@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# SageMath (files it creates when preparsing .sage scripts)
+*.sage.py
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local tool settings and notes that do not belong in the repository
+.claude/
+
+# NOTE: the results/ folder is NOT ignored on purpose. It holds the output of the run
+# described in README.md (logs, certificates, summary), which is part of the reproduction.

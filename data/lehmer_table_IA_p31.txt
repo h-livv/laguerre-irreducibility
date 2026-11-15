@@ -1,0 +1,13 @@
+# OPTIONAL: a hand-typed copy of Lehmer's Table IA for the prime 31.
+#
+# Source: D. H. Lehmer, "On a problem of Stormer", Illinois J. Math. 8 (1964), 57-79.
+#
+# What to type here: every integer m >= 2 such that both m and m - 1 have all their prime
+# factors <= 31, that is P(m(m-1)) <= 31. The largest entry is 1611308700.
+# CAREFUL: check which number of each consecutive pair Lehmer's table prints. This file
+# must contain the LARGER one (m, not m - 1).
+#
+# Format: integers separated by spaces, commas or new lines. '#' starts a comment.
+#
+# This file is intentionally EMPTY for now: the table has not been typed in yet.
+# While it is empty, step04_stormer_data.py skips the comparison with the typed table.

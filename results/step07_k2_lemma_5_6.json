@@ -1,0 +1,1419 @@
+{
+ "step": "step07_k2_lemma_5_6",
+ "checkpoints": [
+  {
+   "description": "Stage A: largest n with P(n(n-1)) <= 31 (Lehmer's n_2)",
+   "paper": 1611308700,
+   "ours": 1611308700,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage B: every n > 10^5 has omega_11(n(n-1)) >= 2 (Lehmer's Table IB)",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage B: number of n with P(n(n-1)) <= 31 and omega_7(n(n-1)) <= 1",
+   "paper": 59,
+   "ours": 59,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage B: all these n are <= 10^5",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage C, group 11 to 31: [number of n, number of pairs]",
+   "paper": [
+    32,
+    118
+   ],
+   "ours": [
+    32,
+    118
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage C, group 7: [number of n, number of a, number of pairs]",
+   "paper": [
+    13,
+    21,
+    273
+   ],
+   "ours": [
+    13,
+    21,
+    273
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage C, group at most 5: the values of n",
+   "paper": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    16,
+    25,
+    81
+   ],
+   "ours": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    16,
+    25,
+    81
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D, group 11 to 31: P((n+a)(n+a-1)) >= 11 for all pairs",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D, group 11 to 31: pairs with P((n+a)(n+a-1)) >= 37, and <= 31",
+   "paper": [
+    106,
+    12
+   ],
+   "ours": [
+    106,
+    12
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D, group 11 to 31: of these, P((n+a)(n+a-1)) <= P((n-3)(n-2))",
+   "paper": 8,
+   "ours": 8,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D, group 11 to 31: pairs with P >= 37 passing Lemma 5.4(i)",
+   "paper": [],
+   "ours": [],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D, group 11 to 31: pairs with P <= 31 passing Lemma 5.4(iii)",
+   "paper": [],
+   "ours": [],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D, group 11 to 31: survivors",
+   "paper": [],
+   "ours": [],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D, group 7: survivors",
+   "paper": [
+    [
+     36,
+     339
+    ]
+   ],
+   "ours": [
+    [
+     36,
+     339
+    ]
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Stage D, group at most 5: survivors with n = 81",
+   "paper": [
+    [
+     81,
+     115
+    ],
+    [
+     81,
+     235
+    ],
+    [
+     81,
+     544
+    ],
+    [
+     81,
+     648
+    ]
+   ],
+   "ours": [
+    [
+     81,
+     115
+    ],
+    [
+     81,
+     144
+    ],
+    [
+     81,
+     235
+    ],
+    [
+     81,
+     360
+    ],
+    [
+     81,
+     544
+    ],
+    [
+     81,
+     648
+    ]
+   ],
+   "matches": false,
+   "explanation": "Lemma 5.4 as stated does not eliminate a = 144 and a = 360: 225 * 224 has no prime >= 11, and for 441 * 440 the prime 11 satisfies 11^2 | (a + 3). The paper does not say how it removes them. Both are closed below by a Newton polygon (p = 3, right-most slope 40/81 < 1/2)."
+  },
+  {
+   "description": "Stage D, group at most 5: number of survivors with n != 81",
+   "paper": 51,
+   "ours": 51,
+   "matches": true,
+   "explanation": ""
+  }
+ ],
+ "certificates": [
+  {
+   "n": 36,
+   "a": 339,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      36,
+      17
+     ]
+    ],
+    "rightmost_slope": "13/27"
+   }
+  },
+  {
+   "n": 4,
+   "a": 60,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 7,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  },
+  {
+   "n": 4,
+   "a": 77,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  },
+  {
+   "n": 4,
+   "a": 117,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  },
+  {
+   "n": 4,
+   "a": 122,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 7,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/4"
+   }
+  },
+  {
+   "n": 4,
+   "a": 165,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  },
+  {
+   "n": 4,
+   "a": 221,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 7,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  },
+  {
+   "n": 4,
+   "a": 239,
+   "k": 2,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 285,
+   "k": 2,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 357,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  },
+  {
+   "n": 4,
+   "a": 672,
+   "k": 2,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 837,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  },
+  {
+   "n": 4,
+   "a": 957,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  },
+  {
+   "n": 5,
+   "a": 59,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      5,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/5"
+   }
+  },
+  {
+   "n": 5,
+   "a": 76,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      5,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/5"
+   }
+  },
+  {
+   "n": 5,
+   "a": 121,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 7,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      5,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/5"
+   }
+  },
+  {
+   "n": 5,
+   "a": 220,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "rightmost_slope": "2/5"
+   }
+  },
+  {
+   "n": 5,
+   "a": 238,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      5,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/5"
+   }
+  },
+  {
+   "n": 6,
+   "a": 58,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      6,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/5"
+   }
+  },
+  {
+   "n": 6,
+   "a": 75,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      6,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/5"
+   }
+  },
+  {
+   "n": 6,
+   "a": 120,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 7,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      6,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/6"
+   }
+  },
+  {
+   "n": 6,
+   "a": 219,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 7,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      6,
+      1
+     ]
+    ],
+    "rightmost_slope": "1/5"
+   }
+  },
+  {
+   "n": 9,
+   "a": 55,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      9,
+      4
+     ]
+    ],
+    "rightmost_slope": "4/9"
+   }
+  },
+  {
+   "n": 9,
+   "a": 72,
+   "k": 2,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     9
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "a": 117,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      9,
+      4
+     ]
+    ],
+    "rightmost_slope": "4/9"
+   }
+  },
+  {
+   "n": 9,
+   "a": 216,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      9,
+      4
+     ]
+    ],
+    "rightmost_slope": "4/9"
+   }
+  },
+  {
+   "n": 10,
+   "a": 54,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      10,
+      4
+     ]
+    ],
+    "rightmost_slope": "4/9"
+   }
+  },
+  {
+   "n": 10,
+   "a": 71,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      10,
+      3
+     ]
+    ],
+    "rightmost_slope": "2/5"
+   }
+  },
+  {
+   "n": 10,
+   "a": 116,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      4
+     ]
+    ],
+    "rightmost_slope": "2/5"
+   }
+  },
+  {
+   "n": 10,
+   "a": 215,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      3
+     ]
+    ],
+    "rightmost_slope": "3/10"
+   }
+  },
+  {
+   "n": 16,
+   "a": 65,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      16,
+      4
+     ]
+    ],
+    "rightmost_slope": "3/10"
+   }
+  },
+  {
+   "n": 16,
+   "a": 89,
+   "k": 2,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 110,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      16,
+      5
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  },
+  {
+   "n": 16,
+   "a": 180,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      16,
+      3
+     ]
+    ],
+    "rightmost_slope": "1/5"
+   }
+  },
+  {
+   "n": 16,
+   "a": 209,
+   "k": 2,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 335,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      16,
+      4
+     ]
+    ],
+    "rightmost_slope": "4/15"
+   }
+  },
+  {
+   "n": 16,
+   "a": 609,
+   "k": 2,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 713,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      16,
+      4
+     ]
+    ],
+    "rightmost_slope": "4/15"
+   }
+  },
+  {
+   "n": 25,
+   "a": 56,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 75,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 101,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      7
+     ]
+    ],
+    "rightmost_slope": "7/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 136,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      7,
+      2
+     ],
+     [
+      25,
+      10
+     ]
+    ],
+    "rightmost_slope": "4/9"
+   }
+  },
+  {
+   "n": 25,
+   "a": 137,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 200,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 218,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 251,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 360,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      7
+     ]
+    ],
+    "rightmost_slope": "7/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 416,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 504,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 515,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 551,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 25,
+   "a": 711,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      6
+     ]
+    ],
+    "rightmost_slope": "6/25"
+   }
+  },
+  {
+   "n": 81,
+   "a": 115,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      81,
+      40
+     ]
+    ],
+    "rightmost_slope": "40/81"
+   }
+  },
+  {
+   "n": 81,
+   "a": 144,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      81,
+      40
+     ]
+    ],
+    "rightmost_slope": "40/81"
+   }
+  },
+  {
+   "n": 81,
+   "a": 235,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 5,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      56,
+      13
+     ],
+     [
+      81,
+      20
+     ]
+    ],
+    "rightmost_slope": "7/25"
+   }
+  },
+  {
+   "n": 81,
+   "a": 360,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      81,
+      40
+     ]
+    ],
+    "rightmost_slope": "40/81"
+   }
+  },
+  {
+   "n": 81,
+   "a": 544,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 3,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      81,
+      40
+     ]
+    ],
+    "rightmost_slope": "40/81"
+   }
+  },
+  {
+   "n": 81,
+   "a": 648,
+   "k": 2,
+   "certificate": {
+    "type": "newton_polygon",
+    "prime": 7,
+    "vertices": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      29,
+      4
+     ],
+     [
+      78,
+      13
+     ],
+     [
+      81,
+      14
+     ]
+    ],
+    "rightmost_slope": "1/3"
+   }
+  }
+ ],
+ "extra": {}
+}

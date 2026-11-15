@@ -1,0 +1,9 @@
+[checkpoint MATCH    ] Lemma 2.6(i): triples (N, p, q)
+        paper: []
+        ours:  []
+[checkpoint MATCH    ] Lemma 2.6(ii): triples (N, p, q)
+        paper: [[363, 11, 19], [847, 11, 13]]
+        ours:  [[363, 11, 19], [847, 11, 13]]
+[checkpoint MATCH    ] Lemma 2.6(iii): pairs (N, p)
+        paper: []
+        ours:  []

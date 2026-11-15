@@ -1,0 +1,14 @@
+# Conda environment with everything the scripts need.
+#
+#     conda env create -f environment.yml      (or: mamba env create -f environment.yml)
+#     conda activate laguerre
+#     export SAGE_PYTHON=python
+#     bash run_all.sh
+#
+# The run stored in results/ was made with SageMath 10.9 on Linux.
+name: laguerre
+channels:
+  - conda-forge
+dependencies:
+  - sage=10.9      # brings its own Python, and mpmath
+  - pytest         # optional, for: python -m pytest tests/

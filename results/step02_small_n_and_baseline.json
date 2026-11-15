@@ -1,0 +1,480 @@
+{
+ "step": "step02_small_n_and_baseline",
+ "checkpoints": [
+  {
+   "description": "n = 2: the a with L_2^(a) reducible (by factorisation)",
+   "paper": [
+    62,
+    79,
+    98,
+    119,
+    142,
+    167,
+    194,
+    223,
+    254,
+    287,
+    322,
+    359,
+    398,
+    439,
+    482,
+    527,
+    574,
+    623,
+    674,
+    727,
+    782,
+    839,
+    898,
+    959
+   ],
+   "ours": [
+    62,
+    79,
+    98,
+    119,
+    142,
+    167,
+    194,
+    223,
+    254,
+    287,
+    322,
+    359,
+    398,
+    439,
+    482,
+    527,
+    574,
+    623,
+    674,
+    727,
+    782,
+    839,
+    898,
+    959
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "n = 2: Theorem 1.2(i), reducible exactly when a + 2 is a square",
+   "paper": [
+    62,
+    79,
+    98,
+    119,
+    142,
+    167,
+    194,
+    223,
+    254,
+    287,
+    322,
+    359,
+    398,
+    439,
+    482,
+    527,
+    574,
+    623,
+    674,
+    727,
+    782,
+    839,
+    898,
+    959
+   ],
+   "ours": [
+    62,
+    79,
+    98,
+    119,
+    142,
+    167,
+    194,
+    223,
+    254,
+    287,
+    322,
+    359,
+    398,
+    439,
+    482,
+    527,
+    574,
+    623,
+    674,
+    727,
+    782,
+    839,
+    898,
+    959
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "n = 3: the a allowed by Theorem 1.2(ii)",
+   "paper": [
+    51,
+    105,
+    122,
+    125,
+    247,
+    253,
+    340,
+    429,
+    497,
+    683,
+    726,
+    861
+   ],
+   "ours": [
+    51,
+    105,
+    122,
+    125,
+    247,
+    253,
+    340,
+    429,
+    497,
+    683,
+    726,
+    861
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "n = 3: the a with L_3^(a) reducible (by factorisation)",
+   "paper": [],
+   "ours": [],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "n = 3: every reducible L_3^(a) has the shape of Theorem 1.2(ii)",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "baseline: reducible (n, a) with 4 <= n <= 30",
+   "paper": [],
+   "ours": [],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "imported exceptions (a <= 50) that have a linear factor",
+   "paper": [
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     2,
+     14
+    ],
+    [
+     2,
+     23
+    ],
+    [
+     2,
+     34
+    ],
+    [
+     2,
+     47
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     23
+    ]
+   ],
+   "ours": [
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     2,
+     14
+    ],
+    [
+     2,
+     23
+    ],
+    [
+     2,
+     34
+    ],
+    [
+     2,
+     47
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     23
+    ]
+   ],
+   "matches": true,
+   "explanation": ""
+  }
+ ],
+ "certificates": [
+  {
+   "n": 3,
+   "a": 51,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 105,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 122,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 125,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 247,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 253,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 340,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 429,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 497,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 683,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 726,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "a": 861,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  }
+ ],
+ "extra": {
+  "exceptions": [
+   [
+    2,
+    62
+   ],
+   [
+    2,
+    79
+   ],
+   [
+    2,
+    98
+   ],
+   [
+    2,
+    119
+   ],
+   [
+    2,
+    142
+   ],
+   [
+    2,
+    167
+   ],
+   [
+    2,
+    194
+   ],
+   [
+    2,
+    223
+   ],
+   [
+    2,
+    254
+   ],
+   [
+    2,
+    287
+   ],
+   [
+    2,
+    322
+   ],
+   [
+    2,
+    359
+   ],
+   [
+    2,
+    398
+   ],
+   [
+    2,
+    439
+   ],
+   [
+    2,
+    482
+   ],
+   [
+    2,
+    527
+   ],
+   [
+    2,
+    574
+   ],
+   [
+    2,
+    623
+   ],
+   [
+    2,
+    674
+   ],
+   [
+    2,
+    727
+   ],
+   [
+    2,
+    782
+   ],
+   [
+    2,
+    839
+   ],
+   [
+    2,
+    898
+   ],
+   [
+    2,
+    959
+   ]
+  ]
+ }
+}

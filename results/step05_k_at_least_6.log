@@ -1,0 +1,27 @@
+[checkpoint MATCH    ] largest k with 5k < a <= 1000 (the paper says k < 200)
+        paper: 199
+        ours:  199
+[checkpoint MATCH    ] for 6 <= k <= 199: max(2k+13, 541k/262) = 2k+13
+        paper: True
+        ours:  True
+[checkpoint MATCH    ] for k >= 18: max(1+2k, 37) = 1+2k
+        paper: True
+        ours:  True
+[checkpoint MATCH    ] for k >= 18: 4.42k >= 37
+        paper: True
+        ours:  True
+[checkpoint MATCH    ] the exception set T of Lemma 2.2 has no k >= 18
+        paper: True
+        ours:  True
+[checkpoint MATCH    ] p^2 - p >= 1000 for the first prime p = 41 above 37
+        paper: True
+        ours:  True
+[checkpoint MATCH    ] for 6 <= k < 18: max(1+2k, 37) = 37
+        paper: True
+        ours:  True
+[checkpoint MATCH    ] for 6 <= k < 18: 6k+1 >= 37
+        paper: True
+        ours:  True
+
+Imported for this step: Lemma 2.1 (Laishram-Shorey), Lemma 2.2 (Nair-Shorey),
+Lemma 2.3 (Najman), Lemma 2.10 (Laishram-Shorey), and the deduction of Lemma 5.2.

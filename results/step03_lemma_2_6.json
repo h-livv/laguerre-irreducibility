@@ -1,0 +1,50 @@
+{
+ "step": "step03_lemma_2_6",
+ "checkpoints": [
+  {
+   "description": "Lemma 2.6(i): triples (N, p, q)",
+   "paper": [],
+   "ours": [],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Lemma 2.6(ii): triples (N, p, q)",
+   "paper": [
+    [
+     363,
+     11,
+     19
+    ],
+    [
+     847,
+     11,
+     13
+    ]
+   ],
+   "ours": [
+    [
+     363,
+     11,
+     19
+    ],
+    [
+     847,
+     11,
+     13
+    ]
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Lemma 2.6(iii): pairs (N, p)",
+   "paper": [],
+   "ours": [],
+   "matches": true,
+   "explanation": ""
+  }
+ ],
+ "certificates": [],
+ "extra": {}
+}

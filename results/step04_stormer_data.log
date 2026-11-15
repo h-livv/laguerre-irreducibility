@@ -1,0 +1,6 @@
+Number of 31-smooth numbers up to 10000000000: 581272
+Number of m >= 2 with P(m(m-1)) <= 31: 482
+[checkpoint MATCH    ] largest m <= 10^10 with P(m(m-1)) <= 31 (Lehmer's n_2)
+        paper: 1611308700
+        ours:  1611308700
+No typed copy of Lehmer's table found in data/lehmer_table_IA_p31.txt; comparison skipped.

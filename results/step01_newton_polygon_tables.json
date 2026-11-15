@@ -1,0 +1,175 @@
+{
+ "step": "step01_newton_polygon_tables",
+ "checkpoints": [
+  {
+   "description": "Table row (25, 527, 3), p = 29: paper's points agree with our polygon",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (25, 527, 3), p = 29: slope of the right-most edge",
+   "paper": "1/24",
+   "ours": "1/24",
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (25, 527, 3), p = 29: Lemma 2.8 excludes degree k",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (56, 845, 3), p = 17: paper's points agree with our polygon",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (56, 845, 3), p = 17: slope of the right-most edge",
+   "paper": "1/5",
+   "ours": "1/5",
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (56, 845, 3), p = 17: Lemma 2.8 excludes degree k",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (65, 167, 3), p = 29: paper's points agree with our polygon",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (65, 167, 3), p = 29: slope of the right-most edge",
+   "paper": "1/7",
+   "ours": "1/7",
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (65, 167, 3), p = 29: Lemma 2.8 excludes degree k",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (36, 339, 2), p = 3: paper's points agree with our polygon",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (36, 339, 2), p = 3: slope of the right-most edge",
+   "paper": "13/27",
+   "ours": "13/27",
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (36, 339, 2), p = 3: Lemma 2.8 excludes degree k",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 115, 2), p = 7: paper's points agree with our polygon",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 115, 2), p = 7: slope of the right-most edge",
+   "paper": "1/4",
+   "ours": "1/4",
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 115, 2), p = 7: Lemma 2.8 excludes degree k",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 235, 2), p = 7: paper's points agree with our polygon",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 235, 2), p = 7: slope of the right-most edge",
+   "paper": "1/3",
+   "ours": "1/3",
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 235, 2), p = 7: Lemma 2.8 excludes degree k",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 544, 2), p = 3: paper's points agree with our polygon",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 544, 2), p = 3: slope of the right-most edge",
+   "paper": "40/81",
+   "ours": "40/81",
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 544, 2), p = 3: Lemma 2.8 excludes degree k",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 648, 2), p = 7: paper's points agree with our polygon",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 648, 2), p = 7: slope of the right-most edge",
+   "paper": "1/3",
+   "ours": "1/3",
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Table row (81, 648, 2), p = 7: Lemma 2.8 excludes degree k",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  }
+ ],
+ "certificates": [],
+ "extra": {}
+}

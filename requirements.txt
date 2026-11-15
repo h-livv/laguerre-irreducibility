@@ -1,0 +1,13 @@
+# Pure-Python packages used by this repository.
+#
+# IMPORTANT: this file does NOT install SageMath, which the scripts need in order to
+# factorise polynomials (laguerre/oracles.py). SageMath is not a normal pip package.
+# Install it first (see README.md, "Requirements"; environment.yml is the easy way),
+# then, only if these packages are missing from that installation:
+#
+#     $SAGE_PYTHON -m pip install -r requirements.txt
+#
+# Versions are the ones the run in results/ was made with (SageMath 10.9, Python 3.14).
+
+mpmath      # numerical roots, used only by one property test (shipped with SageMath)
+pytest      # optional: tests/test_properties.py can also be run directly without it

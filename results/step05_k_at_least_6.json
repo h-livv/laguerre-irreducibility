@@ -1,0 +1,63 @@
+{
+ "step": "step05_k_at_least_6",
+ "checkpoints": [
+  {
+   "description": "largest k with 5k < a <= 1000 (the paper says k < 200)",
+   "paper": 199,
+   "ours": 199,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "for 6 <= k <= 199: max(2k+13, 541k/262) = 2k+13",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "for k >= 18: max(1+2k, 37) = 1+2k",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "for k >= 18: 4.42k >= 37",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "the exception set T of Lemma 2.2 has no k >= 18",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "p^2 - p >= 1000 for the first prime p = 41 above 37",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "for 6 <= k < 18: max(1+2k, 37) = 37",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "for 6 <= k < 18: 6k+1 >= 37",
+   "paper": true,
+   "ours": true,
+   "matches": true,
+   "explanation": ""
+  }
+ ],
+ "certificates": [],
+ "extra": {}
+}

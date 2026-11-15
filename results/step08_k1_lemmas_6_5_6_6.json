@@ -1,0 +1,3885 @@
+{
+ "step": "step08_k1_lemmas_6_5_6_6",
+ "checkpoints": [
+  {
+   "description": "Part A: pairs with 11 <= P(n) <= 31 before Lemma 5.4",
+   "paper": 17,
+   "ours": 17,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Part A: pairs with 11 <= P(n) <= 31 after Lemma 5.4",
+   "paper": [
+    [
+     22,
+     362
+    ],
+    [
+     152,
+     360
+    ],
+    [
+     6656,
+     844
+    ]
+   ],
+   "ours": [
+    [
+     22,
+     362
+    ],
+    [
+     152,
+     360
+    ],
+    [
+     6656,
+     844
+    ]
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Part A: the set S-tilde",
+   "paper": [
+    [
+     5,
+     123
+    ],
+    [
+     5,
+     724
+    ],
+    [
+     10,
+     374
+    ],
+    [
+     20,
+     124
+    ],
+    [
+     22,
+     362
+    ],
+    [
+     25,
+     623
+    ],
+    [
+     25,
+     999
+    ],
+    [
+     40,
+     248
+    ],
+    [
+     40,
+     824
+    ],
+    [
+     40,
+     974
+    ],
+    [
+     56,
+     538
+    ],
+    [
+     152,
+     360
+    ],
+    [
+     160,
+     224
+    ],
+    [
+     200,
+     124
+    ],
+    [
+     320,
+     724
+    ],
+    [
+     400,
+     624
+    ],
+    [
+     640,
+     224
+    ],
+    [
+     896,
+     979
+    ],
+    [
+     6656,
+     844
+    ]
+   ],
+   "ours": [
+    [
+     5,
+     123
+    ],
+    [
+     5,
+     724
+    ],
+    [
+     10,
+     374
+    ],
+    [
+     20,
+     124
+    ],
+    [
+     22,
+     362
+    ],
+    [
+     25,
+     623
+    ],
+    [
+     25,
+     999
+    ],
+    [
+     30,
+     699
+    ],
+    [
+     40,
+     248
+    ],
+    [
+     40,
+     824
+    ],
+    [
+     40,
+     974
+    ],
+    [
+     56,
+     538
+    ],
+    [
+     152,
+     360
+    ],
+    [
+     160,
+     224
+    ],
+    [
+     200,
+     124
+    ],
+    [
+     320,
+     724
+    ],
+    [
+     400,
+     624
+    ],
+    [
+     640,
+     224
+    ],
+    [
+     896,
+     979
+    ],
+    [
+     6656,
+     844
+    ]
+   ],
+   "matches": false,
+   "explanation": "We get one extra pair, (30, 699). It passes Lemmas 6.1, 6.2, 6.3 and 5.4 as we read them: 5^2 | (a+1), 3^3 | (a+3) with nu_3(n) = 1, and n + a = 3^6. No Newton polygon excludes it either (the right-most slope is >= 1 for p = 2, 3, 5). It is closed by factorisation: the polynomial is irreducible."
+  },
+  {
+   "description": "Part B: number of pairs, without the p = 3 condition of Lemma 5.4(ii)",
+   "paper": 366,
+   "ours": 366,
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Part B: pairs with n > 300 and n != 512, without the p = 3 condition",
+   "paper": [
+    [
+     384,
+     480
+    ],
+    [
+     432,
+     80
+    ],
+    [
+     576,
+     160
+    ],
+    [
+     576,
+     482
+    ],
+    [
+     576,
+     674
+    ],
+    [
+     768,
+     294
+    ],
+    [
+     768,
+     480
+    ],
+    [
+     768,
+     584
+    ],
+    [
+     768,
+     753
+    ],
+    [
+     1152,
+     723
+    ],
+    [
+     1536,
+     512
+    ]
+   ],
+   "ours": [
+    [
+     384,
+     480
+    ],
+    [
+     432,
+     80
+    ],
+    [
+     576,
+     160
+    ],
+    [
+     576,
+     482
+    ],
+    [
+     576,
+     674
+    ],
+    [
+     768,
+     294
+    ],
+    [
+     768,
+     480
+    ],
+    [
+     768,
+     584
+    ],
+    [
+     768,
+     753
+    ],
+    [
+     1152,
+     723
+    ],
+    [
+     1536,
+     512
+    ]
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "Part B: the values of a for n = 512, with the p = 3 condition",
+   "paper": [
+    512,
+    576,
+    656,
+    664,
+    860,
+    948
+   ],
+   "ours": [
+    512,
+    576,
+    656,
+    664,
+    860,
+    948
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "(n, a) = (896, 979): candidates left by Proposition 1.3 (paper: xi = 2770, not a root)",
+   "paper": [
+    2770
+   ],
+   "ours": [],
+   "matches": false,
+   "explanation": "Our candidate list also requires Rad(n(n+a)) | xi (Remark 2 of the paper). Here Rad(896 * 1875) = 210 does not divide 2770, so 2770 is already excluded and no candidate is left. The conclusion (no integer root) is the same."
+  },
+  {
+   "description": "(n, a) = (512, 512): candidates left by Proposition 1.3 (paper: xi = 2046, not a root)",
+   "paper": [
+    2046
+   ],
+   "ours": [
+    2046
+   ],
+   "matches": true,
+   "explanation": ""
+  },
+  {
+   "description": "(n, a) = (400, 624): number of candidate xi checked (reading uncertain)",
+   "paper": 128,
+   "ours": 270,
+   "matches": false,
+   "explanation": "UNEXPLAINED. We count all multiples of Rad(n(n+a)) = 10 in (0, 2706]. Other readings we tried give 142 (xi sharing a factor with (n-1)(n+a-1)), 124, 112 and 94. All 270 candidates are tested and none is a root, so nothing is lost."
+  }
+ ],
+ "certificates": [
+  {
+   "n": 5,
+   "a": 123,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     5
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "a": 724,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     5
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "a": 374,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     10
+    ]
+   }
+  },
+  {
+   "n": 20,
+   "a": 124,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     20
+    ]
+   }
+  },
+  {
+   "n": 22,
+   "a": 362,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     22
+    ]
+   }
+  },
+  {
+   "n": 25,
+   "a": 623,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     25
+    ]
+   }
+  },
+  {
+   "n": 25,
+   "a": 999,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     25
+    ]
+   }
+  },
+  {
+   "n": 30,
+   "a": 699,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     30
+    ]
+   }
+  },
+  {
+   "n": 40,
+   "a": 248,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     40
+    ]
+   }
+  },
+  {
+   "n": 40,
+   "a": 824,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     40
+    ]
+   }
+  },
+  {
+   "n": 40,
+   "a": 974,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     40
+    ]
+   }
+  },
+  {
+   "n": 56,
+   "a": 538,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     56
+    ]
+   }
+  },
+  {
+   "n": 152,
+   "a": 360,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     152
+    ]
+   }
+  },
+  {
+   "n": 160,
+   "a": 224,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     160
+    ]
+   }
+  },
+  {
+   "n": 200,
+   "a": 124,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     200
+    ]
+   }
+  },
+  {
+   "n": 320,
+   "a": 724,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 2522,
+    "radical_of_n_times_n_plus_a": 870,
+    "number_of_direct_candidates": 2,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 400,
+   "a": 624,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 2706,
+    "radical_of_n_times_n_plus_a": 10,
+    "number_of_direct_candidates": 270,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 640,
+   "a": 224,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 2993,
+    "radical_of_n_times_n_plus_a": 30,
+    "number_of_direct_candidates": 99,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 896,
+   "a": 979,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 5365,
+    "radical_of_n_times_n_plus_a": 210,
+    "number_of_direct_candidates": 25,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 6656,
+   "a": 844,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 28288,
+    "radical_of_n_times_n_plus_a": 390,
+    "number_of_direct_candidates": 72,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 4,
+   "a": 60,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 68,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 77,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 92,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 104,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 124,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 140,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 158,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 188,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 212,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 239,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 252,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 284,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 320,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 380,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 428,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 482,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 508,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 572,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 621,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 644,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 725,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 764,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 860,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "a": 968,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 186,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 237,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 294,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 314,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 480,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 494,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 619,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 723,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "a": 966,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     6
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 56,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 76,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 88,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 90,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 104,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 120,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 160,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 188,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 216,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 248,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 286,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 335,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 376,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 384,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 440,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 504,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 664,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 678,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 721,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 776,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 888,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "a": 52,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     12
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "a": 98,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     12
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "a": 116,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     12
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "a": 132,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     12
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "a": 186,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     12
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "a": 348,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     12
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "a": 692,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     12
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "a": 780,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     12
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 56,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 59,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 64,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 65,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 74,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 80,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 84,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 92,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 96,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 104,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 109,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 112,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 119,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 128,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 134,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 144,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 146,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 164,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 176,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 184,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 194,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 200,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 209,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 224,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 227,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 234,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 240,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 254,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 272,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 284,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 304,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 308,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 344,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 359,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 368,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 384,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 389,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 416,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 434,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 464,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 470,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 484,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 488,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 496,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 524,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 560,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 584,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 609,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 624,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 632,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 659,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 684,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 704,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 713,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 734,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 752,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 784,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 794,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 848,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 880,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 884,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 929,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 944,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 956,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 984,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 18,
+   "a": 78,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     18
+    ]
+   }
+  },
+  {
+   "n": 24,
+   "a": 160,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     24
+    ]
+   }
+  },
+  {
+   "n": 24,
+   "a": 482,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     24
+    ]
+   }
+  },
+  {
+   "n": 27,
+   "a": 485,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     27
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 61,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 76,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 92,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 96,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 123,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 160,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 216,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 224,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 340,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 400,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 448,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 464,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 480,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 736,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 805,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 898,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 929,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 960,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 992,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 36,
+   "a": 160,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     36
+    ]
+   }
+  },
+  {
+   "n": 36,
+   "a": 188,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     36
+    ]
+   }
+  },
+  {
+   "n": 36,
+   "a": 564,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     36
+    ]
+   }
+  },
+  {
+   "n": 36,
+   "a": 944,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     36
+    ]
+   }
+  },
+  {
+   "n": 48,
+   "a": 80,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     48
+    ]
+   }
+  },
+  {
+   "n": 48,
+   "a": 375,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     48
+    ]
+   }
+  },
+  {
+   "n": 54,
+   "a": 970,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     54
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 64,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 80,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 83,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 98,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 104,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 125,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 128,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 132,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 152,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 160,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 179,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 188,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 192,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 224,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 230,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 260,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 272,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 279,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 314,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 320,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 328,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 368,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 377,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 384,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 422,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 440,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 448,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 503,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 512,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 524,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 584,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 608,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 622,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 665,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 692,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 704,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 720,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 800,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 818,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 832,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 908,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 944,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 960,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 965,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 96,
+   "a": 132,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     96
+    ]
+   }
+  },
+  {
+   "n": 96,
+   "a": 160,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     96
+    ]
+   }
+  },
+  {
+   "n": 96,
+   "a": 224,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     96
+    ]
+   }
+  },
+  {
+   "n": 96,
+   "a": 404,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     96
+    ]
+   }
+  },
+  {
+   "n": 96,
+   "a": 480,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     96
+    ]
+   }
+  },
+  {
+   "n": 96,
+   "a": 512,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     96
+    ]
+   }
+  },
+  {
+   "n": 96,
+   "a": 672,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     96
+    ]
+   }
+  },
+  {
+   "n": 96,
+   "a": 854,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     96
+    ]
+   }
+  },
+  {
+   "n": 108,
+   "a": 404,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     108
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 128,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 160,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 196,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 304,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 358,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 372,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 380,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 384,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 439,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 448,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 497,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 520,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 601,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 736,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 844,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 872,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 880,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 888,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 896,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 997,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 192,
+   "a": 132,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     192
+    ]
+   }
+  },
+  {
+   "n": 192,
+   "a": 294,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     192
+    ]
+   }
+  },
+  {
+   "n": 192,
+   "a": 320,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     192
+    ]
+   }
+  },
+  {
+   "n": 192,
+   "a": 348,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     192
+    ]
+   }
+  },
+  {
+   "n": 192,
+   "a": 456,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     192
+    ]
+   }
+  },
+  {
+   "n": 192,
+   "a": 537,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     192
+    ]
+   }
+  },
+  {
+   "n": 192,
+   "a": 672,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     192
+    ]
+   }
+  },
+  {
+   "n": 192,
+   "a": 780,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     192
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 256,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 284,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 288,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 320,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 322,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 344,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 356,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 369,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 384,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 392,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 419,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 424,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 464,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 473,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 494,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 509,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 512,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 544,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 554,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 560,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 594,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 608,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 611,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 644,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 662,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 704,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 716,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 744,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 764,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 768,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 824,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 832,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 869,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 896,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 900,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 944,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 959,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 968,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 994,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 288,
+   "a": 160,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     288
+    ]
+   }
+  },
+  {
+   "n": 288,
+   "a": 888,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     288
+    ]
+   }
+  },
+  {
+   "n": 384,
+   "a": 480,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 2402,
+    "radical_of_n_times_n_plus_a": 6,
+    "number_of_direct_candidates": 400,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 432,
+   "a": 80,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 1886,
+    "radical_of_n_times_n_plus_a": 6,
+    "number_of_direct_candidates": 314,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 512,
+   "a": 512,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 2986,
+    "radical_of_n_times_n_plus_a": 2,
+    "number_of_direct_candidates": 1493,
+    "proposition_1_3_candidates": [
+     2046
+    ],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 512,
+   "a": 576,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3094,
+    "radical_of_n_times_n_plus_a": 34,
+    "number_of_direct_candidates": 91,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 512,
+   "a": 656,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3228,
+    "radical_of_n_times_n_plus_a": 146,
+    "number_of_direct_candidates": 22,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 512,
+   "a": 664,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3242,
+    "radical_of_n_times_n_plus_a": 42,
+    "number_of_direct_candidates": 77,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 512,
+   "a": 860,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3562,
+    "radical_of_n_times_n_plus_a": 14,
+    "number_of_direct_candidates": 254,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 512,
+   "a": 948,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3703,
+    "radical_of_n_times_n_plus_a": 730,
+    "number_of_direct_candidates": 5,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 576,
+   "a": 160,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 2616,
+    "radical_of_n_times_n_plus_a": 138,
+    "number_of_direct_candidates": 18,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 576,
+   "a": 482,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3197,
+    "radical_of_n_times_n_plus_a": 138,
+    "number_of_direct_candidates": 23,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 576,
+   "a": 674,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3525,
+    "radical_of_n_times_n_plus_a": 30,
+    "number_of_direct_candidates": 117,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 768,
+   "a": 294,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3638,
+    "radical_of_n_times_n_plus_a": 354,
+    "number_of_direct_candidates": 10,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 768,
+   "a": 584,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 4160,
+    "radical_of_n_times_n_plus_a": 78,
+    "number_of_direct_candidates": 53,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 768,
+   "a": 753,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 4452,
+    "radical_of_n_times_n_plus_a": 78,
+    "number_of_direct_candidates": 57,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 1152,
+   "a": 723,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 5968,
+    "radical_of_n_times_n_plus_a": 30,
+    "number_of_direct_candidates": 198,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 1536,
+   "a": 512,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 7133,
+    "radical_of_n_times_n_plus_a": 6,
+    "number_of_direct_candidates": 1188,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  }
+ ],
+ "extra": {}
+}

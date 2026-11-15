@@ -1,0 +1,346 @@
+Stage A, k = 3: n = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 40, 46, 50, 51, 52, 56, 57, 58, 64, 65, 66, 70, 77, 78, 92, 93, 100, 116, 117, 121, 126, 145, 154, 155, 156, 162, 170, 171, 176, 209, 210, 232, 290, 324, 325, 342, 343, 352, 392, 442, 495, 496, 529, 552, 715, 784, 1276, 1520, 1521, 2002, 2025, 2432, 3250, 9802, 13312, 13456]
+Stage A, k = 4: n = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 51, 52, 57, 58, 65, 66, 78, 93, 117, 155, 156, 171, 210, 325, 343, 496, 1521]
+Stage A, k = 5: n = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 52, 58, 66, 156]
+[checkpoint MATCH    ] Stage A: number of n with P(Delta(n-k+1,k)) <= 31, n >= 2k, for k = 3, 4, 5
+        paper: [87, 46, 31]
+        ours:  [87, 46, 31]
+[checkpoint MATCH    ] Stage B: the set T-tilde
+        paper: [[13, 842, 5], [14, 842, 5], [15, 842, 5], [22, 358, 5], [23, 358, 5], [26, 842, 5], [58, 358, 5], [66, 842, 5], [156, 358, 5], [156, 842, 5]]
+        ours:  [[13, 842, 5], [14, 842, 5], [15, 842, 5], [22, 358, 5], [23, 358, 5], [26, 842, 5], [58, 358, 5], [66, 842, 5], [156, 358, 5], [156, 842, 5]]
+Stage C, k = 3: n = [6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 20, 21, 22, 25, 26, 27, 28, 29, 30, 32, 36, 50, 51, 56, 64, 65, 100, 126, 162]
+Stage C, k = 4: n = [8, 9, 10, 11, 12, 15, 16, 17, 18, 21, 27, 28, 30, 51]
+Stage C, k = 5: n = [10, 11, 12, 16, 18, 28]
+[checkpoint MATCH    ] Stage C: number of n after omega_11 <= 1 and nu_p <= 1, for k = 3, 4, 5
+        paper: [31, 14, 6]
+        ours:  [31, 14, 6]
+[checkpoint DIFFERENT] Stage D: pairs (n, k) with P(Delta(n-k+1,k)) < 11
+        paper: [[6, 3], [7, 3], [8, 3], [8, 4], [9, 3], [9, 4], [10, 3], [10, 4], [10, 5], [16, 3]]
+        ours:  [[6, 3], [7, 3], [8, 3], [8, 4], [9, 3], [9, 4], [10, 3], [10, 4], [10, 5], [16, 3], [50, 3]]
+        explanation: The paper says P(Delta(n-k+1,k)) >= 11 for all n >= 11 except (16, 3). But (n, k) = (50, 3) gives 48 * 49 * 50, whose largest prime is 7. The paper's count 186 for k = 3 matches ours only without n = 50, so this pair does not seem to be covered by the paper's counts. It is treated here in Stage F like the other small pairs (38 extra cases, all closed by factorisation).
+[checkpoint MATCH    ] Stage D: number of pairs (n, a) after Lemma 5.3, for k = 3, 4, 5
+        paper: [186, 96, 87]
+        ours:  [186, 96, 87]
+[checkpoint MATCH    ] Stage D: number of triples including T-tilde
+        paper: 379
+        ours:  379
+[checkpoint MATCH    ] Stage E: triples with P(Delta(n+a-k+1,k)) < 37
+        paper: [[25, 527, 3], [65, 167, 3]]
+        ours:  [[25, 527, 3], [65, 167, 3]]
+[checkpoint MATCH    ] Stage E: survivors of Lemma 5.4(i)
+        paper: [[25, 527, 3], [56, 845, 3], [65, 167, 3]]
+        ours:  [[25, 527, 3], [56, 845, 3], [65, 167, 3]]
+[certificate] (n, a, k) = (25, 527, 3): {'type': 'newton_polygon', 'prime': 5, 'vertices': [(0, 0), (25, 6)], 'rightmost_slope': '6/25'}
+[certificate] (n, a, k) = (56, 845, 3): {'type': 'newton_polygon', 'prime': 7, 'vertices': [(0, 0), (7, 1), (56, 9)], 'rightmost_slope': '8/49'}
+[certificate] (n, a, k) = (65, 167, 3): {'type': 'newton_polygon', 'prime': 5, 'vertices': [(0, 0), (5, 1), (55, 13), (65, 16)], 'rightmost_slope': '3/10'}
+[checkpoint MATCH    ] Stage F: number of pairs (n, a) for the paper's small pairs, for k = 3, 4, 5
+        paper: [228, 36, 2]
+        ours:  [228, 36, 2]
+[checkpoint DIFFERENT] Stage F: number of distinct (n, a) for the paper's small pairs
+        paper: 97
+        ours:  228
+        explanation: UNEXPLAINED. The 228 pairs for k = 3 are already distinct, so the number of distinct (n, a) cannot be below 228. We factorise all of them, so nothing is lost.
+Stage F: our list has 304 triples; 38 of them come from the extra pair (50, 3).
+[certificate] (n, a, k) = (6, 51, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 52, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 58, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 59, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 60, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 64, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 71, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 72, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 86, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 87, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 94, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 110, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 111, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 115, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 120, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 139, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 148, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 149, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 150, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 156, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 164, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 165, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 170, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 203, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 204, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 226, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 284, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 318, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 319, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 336, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 337, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 346, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 386, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 436, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 489, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 490, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 523, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 546, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 709, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (6, 778, 3): {'type': 'factorisation', 'factor_degrees': [6]}
+[certificate] (n, a, k) = (7, 51, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 57, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 58, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 59, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 63, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 70, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 71, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 85, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 86, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 93, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 109, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 110, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 114, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 119, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 138, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 147, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 148, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 149, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 155, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 163, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 164, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 169, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 202, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 203, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 225, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 283, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 317, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 318, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 335, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 336, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 345, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 385, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 435, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 488, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 489, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 522, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 545, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 708, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (7, 777, 3): {'type': 'factorisation', 'factor_degrees': [7]}
+[certificate] (n, a, k) = (8, 56, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 57, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 58, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 62, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 69, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 70, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 84, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 85, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 92, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 108, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 109, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 113, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 118, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 137, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 146, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 147, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 148, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 154, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 162, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 163, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 168, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 201, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 202, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 224, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 282, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 316, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 317, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 334, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 335, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 344, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 384, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 434, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 487, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 488, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 521, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 544, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 707, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 776, 3): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (9, 55, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 56, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 57, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 61, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 68, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 69, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 83, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 84, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 91, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 107, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 108, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 112, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 117, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 136, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 145, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 146, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 147, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 153, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 161, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 162, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 167, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 200, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 201, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 223, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 281, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 315, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 316, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 333, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 334, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 343, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 383, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 433, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 486, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 487, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 520, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 543, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 706, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 775, 3): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (10, 54, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 55, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 56, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 60, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 67, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 68, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 82, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 83, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 90, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 106, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 107, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 111, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 116, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 135, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 144, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 145, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 146, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 152, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 160, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 161, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 166, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 199, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 200, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 222, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 280, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 314, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 315, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 332, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 333, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 342, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 382, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 432, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 485, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 486, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 519, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 542, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 705, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 774, 3): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (16, 54, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 61, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 62, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 76, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 77, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 84, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 100, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 101, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 105, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 110, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 129, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 138, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 139, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 140, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 146, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 154, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 155, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 160, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 193, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 194, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 216, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 274, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 308, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 309, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 326, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 327, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 336, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 376, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 426, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 479, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 480, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 513, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 536, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 699, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 768, 3): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (50, 66, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 67, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 71, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 76, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 95, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 104, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 105, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 106, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 112, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 120, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 121, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 126, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 138, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 139, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 140, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 159, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 160, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 182, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 240, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 274, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 275, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 292, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 293, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 302, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 326, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 327, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 328, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 342, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 392, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 445, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 446, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 479, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 502, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 665, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 734, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 750, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 797, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (50, 938, 3): {'type': 'factorisation', 'factor_degrees': [50]}
+[certificate] (n, a, k) = (8, 57, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 58, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 70, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 85, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 109, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 147, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 148, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 163, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 202, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 317, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 335, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (8, 488, 4): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (9, 56, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 57, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 69, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 84, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 108, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 146, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 147, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 162, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 201, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 316, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 334, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (9, 487, 4): {'type': 'factorisation', 'factor_degrees': [9]}
+[certificate] (n, a, k) = (10, 55, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 56, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 68, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 83, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 107, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 145, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 146, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 161, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 200, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 315, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 333, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 486, 4): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 56, 5): {'type': 'factorisation', 'factor_degrees': [10]}
+[certificate] (n, a, k) = (10, 146, 5): {'type': 'factorisation', 'factor_degrees': [10]}

@@ -1,0 +1,67 @@
+Part A: n = 2
+[checkpoint MATCH    ] n = 2: the a with L_2^(a) reducible (by factorisation)
+        paper: [62, 79, 98, 119, 142, 167, 194, 223, 254, 287, 322, 359, 398, 439, 482, 527, 574, 623, 674, 727, 782, 839, 898, 959]
+        ours:  [62, 79, 98, 119, 142, 167, 194, 223, 254, 287, 322, 359, 398, 439, 482, 527, 574, 623, 674, 727, 782, 839, 898, 959]
+[checkpoint MATCH    ] n = 2: Theorem 1.2(i), reducible exactly when a + 2 is a square
+        paper: [62, 79, 98, 119, 142, 167, 194, 223, 254, 287, 322, 359, 398, 439, 482, 527, 574, 623, 674, 727, 782, 839, 898, 959]
+        ours:  [62, 79, 98, 119, 142, 167, 194, 223, 254, 287, 322, 359, 398, 439, 482, 527, 574, 623, 674, 727, 782, 839, 898, 959]
+
+Part B: n = 3
+[checkpoint MATCH    ] n = 3: the a allowed by Theorem 1.2(ii)
+        paper: [51, 105, 122, 125, 247, 253, 340, 429, 497, 683, 726, 861]
+        ours:  [51, 105, 122, 125, 247, 253, 340, 429, 497, 683, 726, 861]
+[checkpoint MATCH    ] n = 3: the a with L_3^(a) reducible (by factorisation)
+        paper: []
+        ours:  []
+[checkpoint MATCH    ] n = 3: every reducible L_3^(a) has the shape of Theorem 1.2(ii)
+        paper: True
+        ours:  True
+[certificate] (n, a, k) = (3, 51, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 105, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 122, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 125, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 247, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 253, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 340, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 429, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 497, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 683, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 726, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+[certificate] (n, a, k) = (3, 861, 1): {'type': 'factorisation', 'factor_degrees': [3]}
+
+Part C: baseline, 4 <= n <= 30 (independent check, not part of the proof)
+    n = 4 done
+    n = 5 done
+    n = 6 done
+    n = 7 done
+    n = 8 done
+    n = 9 done
+    n = 10 done
+    n = 11 done
+    n = 12 done
+    n = 13 done
+    n = 14 done
+    n = 15 done
+    n = 16 done
+    n = 17 done
+    n = 18 done
+    n = 19 done
+    n = 20 done
+    n = 21 done
+    n = 22 done
+    n = 23 done
+    n = 24 done
+    n = 25 done
+    n = 26 done
+    n = 27 done
+    n = 28 done
+    n = 29 done
+    n = 30 done
+[checkpoint MATCH    ] baseline: reducible (n, a) with 4 <= n <= 30
+        paper: []
+        ours:  []
+
+Part D: spot-check of the imported exceptions with a <= 50
+[checkpoint MATCH    ] imported exceptions (a <= 50) that have a linear factor
+        paper: [[2, 2], [2, 7], [2, 14], [2, 23], [2, 34], [2, 47], [4, 5], [4, 23]]
+        ours:  [[2, 2], [2, 7], [2, 14], [2, 23], [2, 34], [2, 47], [4, 5], [4, 23]]
