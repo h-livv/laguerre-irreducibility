@@ -256,6 +256,11 @@ exponent bounds of Lemmas 6.1 and 6.3, the bound N ≤ 1005 of Lemma 2.6, Lehmer
 the prime 31). They are marked in `config.py` and in the docstrings of `filters.py`. With a
 larger `A_MAX` those lemmas are no longer proved; such a run only shows where the method breaks.
 
+**Extension to a ≤ 1078.** [`EXTENSION.md`](EXTENSION.md) checks every one of those places and
+shows that the proof goes through unchanged up to a = 1078 (the limit comes from Lemma 4.3 at
+p = 11). `extension_a1078.py` runs that check and the sieve on 1000 < a ≤ 1078, writing to
+`results/extension_a1078/`.
+
 ## Not done
 
 - **Typed copy of Lehmer's Table IA** (`data/lehmer_table_IA_p31.txt` is empty). Step 4 compares

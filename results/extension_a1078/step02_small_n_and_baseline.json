@@ -1,0 +1,100 @@
+{
+ "step": "step02_small_n_and_baseline",
+ "checkpoints": [
+  {
+   "description": "n = 2: the a with L_2^(a) reducible (by factorisation)",
+   "ours": [
+    1022
+   ],
+   "matches": true
+  },
+  {
+   "description": "n = 2: Theorem 1.2(i), reducible exactly when a + 2 is a square",
+   "ours": [
+    1022
+   ],
+   "matches": true
+  },
+  {
+   "description": "n = 3: the a allowed by Theorem 1.2(ii)",
+   "ours": [
+    1021
+   ],
+   "matches": true
+  },
+  {
+   "description": "n = 3: the a with L_3^(a) reducible (by factorisation)",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "n = 3: every reducible L_3^(a) has the shape of Theorem 1.2(ii)",
+   "ours": true,
+   "matches": true
+  },
+  {
+   "description": "baseline: reducible (n, a) with 4 <= n <= 30",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "imported exceptions (a <= 50) that have a linear factor",
+   "ours": [
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     2,
+     14
+    ],
+    [
+     2,
+     23
+    ],
+    [
+     2,
+     34
+    ],
+    [
+     2,
+     47
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     23
+    ]
+   ],
+   "matches": true
+  }
+ ],
+ "certificates": [
+  {
+   "n": 3,
+   "a": 1021,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     3
+    ]
+   }
+  }
+ ],
+ "extra": {
+  "exceptions": [
+   [
+    2,
+    1022
+   ]
+  ]
+ }
+}

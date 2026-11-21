@@ -1,0 +1,21 @@
+Stage A: 480 values of n >= 4 with P(n(n-1)) <= 31
+COUNT  Stage A: largest n with P(n(n-1)) <= 31 (Lehmer's n_2): 1611308700
+COUNT  Stage B: every n > 10^5 has omega_11(n(n-1)) >= 2 (Lehmer's Table IB): True
+Stage B: n = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 30, 31, 32, 33, 36, 40, 45, 46, 49, 50, 51, 55, 64, 65, 76, 81, 96, 100, 121, 125, 126, 136, 145, 225, 243, 256, 289, 325, 361, 513, 576, 625, 676, 961, 1216, 2401, 4375]
+COUNT  Stage B: number of n with P(n(n-1)) <= 31 and omega_7(n(n-1)) <= 1: 59
+COUNT  Stage B: all these n are <= 10^5: True
+COUNT  Stage C, group 11 to 31: [number of n, number of pairs]: [10, 10]
+COUNT  Stage C, group 7: [number of n, number of a, number of pairs]: [13, 3, 39]
+COUNT  Stage C, group at most 5: the values of n: [4, 5, 6, 9, 10, 16, 25, 81]
+COUNT  Stage D, group 11 to 31: P((n+a)(n+a-1)) >= 11 for all pairs: True
+COUNT  Stage D, group 11 to 31: pairs with P((n+a)(n+a-1)) >= 37, and <= 31: [10, 0]
+COUNT  Stage D, group 11 to 31: of these, P((n+a)(n+a-1)) <= P((n-3)(n-2)): 0
+COUNT  Stage D, group 11 to 31: pairs with P >= 37 passing Lemma 5.4(i): []
+COUNT  Stage D, group 11 to 31: pairs with P <= 31 passing Lemma 5.4(iii): []
+Stage D, group 11 to 31: survivors = []
+Stage D, group 7: survivors = []
+Stage D, group at most 5: survivors = []
+COUNT  Stage D, group 11 to 31: survivors: []
+COUNT  Stage D, group 7: survivors: []
+COUNT  Stage D, group at most 5: survivors with n = 81: []
+COUNT  Stage D, group at most 5: number of survivors with n != 81: 0

@@ -1,0 +1,169 @@
+{
+ "step": "step06_k345_lemma_5_5",
+ "checkpoints": [
+  {
+   "description": "Stage A: number of n with P(Delta(n-k+1,k)) <= 31, n >= 2k, for k = 3, 4, 5",
+   "ours": [
+    87,
+    46,
+    31
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage B: the set T-tilde",
+   "ours": [
+    [
+     13,
+     842,
+     5
+    ],
+    [
+     14,
+     842,
+     5
+    ],
+    [
+     15,
+     842,
+     5
+    ],
+    [
+     22,
+     358,
+     5
+    ],
+    [
+     23,
+     358,
+     5
+    ],
+    [
+     26,
+     842,
+     5
+    ],
+    [
+     58,
+     358,
+     5
+    ],
+    [
+     66,
+     842,
+     5
+    ],
+    [
+     156,
+     358,
+     5
+    ],
+    [
+     156,
+     842,
+     5
+    ]
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage C: number of n after omega_11 <= 1 and nu_p <= 1, for k = 3, 4, 5",
+   "ours": [
+    31,
+    14,
+    6
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage D: pairs (n, k) with P(Delta(n-k+1,k)) < 11",
+   "ours": [
+    [
+     6,
+     3
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     9,
+     3
+    ],
+    [
+     9,
+     4
+    ],
+    [
+     10,
+     3
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     10,
+     5
+    ],
+    [
+     16,
+     3
+    ],
+    [
+     50,
+     3
+    ]
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage D: number of pairs (n, a) after Lemma 5.3, for k = 3, 4, 5",
+   "ours": [
+    16,
+    8,
+    6
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage D: number of triples including T-tilde",
+   "ours": 40,
+   "matches": true
+  },
+  {
+   "description": "Stage E: triples with P(Delta(n+a-k+1,k)) < 37",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "Stage E: survivors of Lemma 5.4(i)",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "Stage F: number of pairs (n, a) for the paper's small pairs, for k = 3, 4, 5",
+   "ours": [
+    0,
+    0,
+    0
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage F: number of distinct (n, a) for the paper's small pairs",
+   "ours": 0,
+   "matches": true
+  }
+ ],
+ "certificates": [],
+ "extra": {}
+}

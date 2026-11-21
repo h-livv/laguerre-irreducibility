@@ -1,0 +1,131 @@
+{
+ "A_EXT": 1078,
+ "largest_A": 1078,
+ "binding": [
+  "Lemma 4.3: c0 = 2 for every prime p >= 11 (eq. (6): a + p + p^2 <= (p-1)p^2)"
+ ],
+ "rows": [
+  {
+   "statement": "Lemma 4.2: p^v0 <= a + p < p^5 for p >= 5, so v0 <= 4",
+   "largest_A": 3119,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 4.3: c0 = 2 for every prime p >= 11 (eq. (6): a + p + p^2 <= (p-1)p^2)",
+   "largest_A": 1078,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.1: a + p < p^2 for p >= 37",
+   "largest_A": 1331,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.2: p^2 - p >= a for the primes p >= 41 used with Lemma 2.10(i)",
+   "largest_A": 1640,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.2: the window n <= M(k) - 1 contradicts p > 4.42k for all 18 <= k < a/5",
+   "largest_A": 5000,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.3, k = 2, p = 7: c0 = 3 (taken in the proof)",
+   "largest_A": 2002,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.3, k = 2, p = 7: 7^4 > a + 4, so 7^3 || (a+2)(a+4)",
+   "largest_A": 2396,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.3, k = 2, p = 7: p^2 q^2 > a + 2 for primes 7 <= p < q",
+   "largest_A": 5000,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.3, k = 2, p = 7: no q > 7 with q^2 | (a+2) when 7^3 | (a+4)",
+   "largest_A": 4111,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.4, table: v~ <= 1 for p >= 37 (p^2 > a + r1, r1 < p)",
+   "largest_A": 1332,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.4, table: v~ <= 2 for p >= 11 (p^3 > a + 3(p-1))",
+   "largest_A": 1300,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.4, table: v~ <= 3 for p = 7 (7^4 > a + 4*6)",
+   "largest_A": 2376,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.4, table: v~ <= 4 for p = 5 (5^5 > a + 5*4)",
+   "largest_A": 3104,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.4, table: v~ <= 6 for p = 3 (3^7 > a + 7*2)",
+   "largest_A": 2172,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.4(i): nu_p(Delta(a+1, p)) = 1 for p >= 37",
+   "largest_A": 1331,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 5.4(iii): no p >= 11 with p^3 | a + j, j <= 5",
+   "largest_A": 1325,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 6.1(ii): c0 <= p - 1 for p = 5 and p = 7",
+   "largest_A": 2470,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 6.1(iii): c0 <= 6 and v0 <= 6 for p = 3",
+   "largest_A": 1446,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 6.1(iii), v0 = 1: 3^v - a < 2v forces v <= 6",
+   "largest_A": 2173,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 6.3(i): 7^2 * 5^2 > a + 1 and 5^2 * 11^2 > a + 1",
+   "largest_A": 1223,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 6.3(i): 7^3 | (a+2) is incompatible with Lemma 6.1(ii) for p = 5",
+   "largest_A": 2398,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 6.3(iii): p^2 q > a + 1 for p, q >= 11",
+   "largest_A": 1329,
+   "holds_at_A_EXT": true
+  },
+  {
+   "statement": "Lemma 2.6, N <= a + 5: no solutions beyond the paper's two",
+   "largest_A": 1439,
+   "holds_at_A_EXT": true
+  }
+ ],
+ "verdict": true,
+ "exceptions": [
+  [
+   2,
+   1022
+  ]
+ ]
+}

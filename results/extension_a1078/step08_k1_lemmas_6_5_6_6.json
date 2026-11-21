@@ -1,0 +1,344 @@
+{
+ "step": "step08_k1_lemmas_6_5_6_6",
+ "checkpoints": [
+  {
+   "description": "Part A: pairs with 11 <= P(n) <= 31 before Lemma 5.4",
+   "ours": 1,
+   "matches": true
+  },
+  {
+   "description": "Part A: pairs with 11 <= P(n) <= 31 after Lemma 5.4",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "Part A: the set S-tilde",
+   "ours": [
+    [
+     1280,
+     1024
+    ],
+    [
+     5120,
+     1024
+    ],
+    [
+     15360,
+     1024
+    ]
+   ],
+   "matches": true
+  },
+  {
+   "description": "Part B: number of pairs, without the p = 3 condition of Lemma 5.4(ii)",
+   "ours": 21,
+   "matches": true
+  },
+  {
+   "description": "Part B: pairs with n > 300 and n != 512, without the p = 3 condition",
+   "ours": [
+    [
+     1024,
+     1024
+    ],
+    [
+     1536,
+     1024
+    ],
+    [
+     3072,
+     1024
+    ]
+   ],
+   "matches": true
+  },
+  {
+   "description": "Part B: the values of a for n = 512, with the p = 3 condition",
+   "ours": [
+    1024,
+    1056
+   ],
+   "matches": true
+  },
+  {
+   "description": "(n, a) = (896, 979): candidates left by Proposition 1.3 (paper: xi = 2770, not a root)",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "(n, a) = (512, 512): candidates left by Proposition 1.3 (paper: xi = 2046, not a root)",
+   "ours": [
+    2046
+   ],
+   "matches": true
+  },
+  {
+   "description": "(n, a) = (400, 624): number of candidate xi checked (reading uncertain)",
+   "ours": 270,
+   "matches": true
+  }
+ ],
+ "certificates": [
+  {
+   "n": 1280,
+   "a": 1024,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 7020,
+    "radical_of_n_times_n_plus_a": 30,
+    "number_of_direct_candidates": 234,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 5120,
+   "a": 1024,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 22483,
+    "radical_of_n_times_n_plus_a": 30,
+    "number_of_direct_candidates": 749,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 15360,
+   "a": 1024,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 63473,
+    "radical_of_n_times_n_plus_a": 30,
+    "number_of_direct_candidates": 2115,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 4,
+   "a": 1020,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     4
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "a": 1016,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     8
+    ]
+   }
+  },
+  {
+   "n": 12,
+   "a": 1077,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     12
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 1008,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "a": 1064,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     16
+    ]
+   }
+  },
+  {
+   "n": 24,
+   "a": 1034,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     24
+    ]
+   }
+  },
+  {
+   "n": 32,
+   "a": 1048,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     32
+    ]
+   }
+  },
+  {
+   "n": 64,
+   "a": 1070,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     64
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 1015,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 128,
+   "a": 1024,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     128
+    ]
+   }
+  },
+  {
+   "n": 192,
+   "a": 1023,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     192
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 1019,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 1024,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 256,
+   "a": 1040,
+   "k": 1,
+   "certificate": {
+    "type": "factorisation",
+    "factor_degrees": [
+     256
+    ]
+   }
+  },
+  {
+   "n": 512,
+   "a": 1024,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3823,
+    "radical_of_n_times_n_plus_a": 6,
+    "number_of_direct_candidates": 637,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 512,
+   "a": 1056,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 3874,
+    "radical_of_n_times_n_plus_a": 14,
+    "number_of_direct_candidates": 276,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 1024,
+   "a": 1024,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 5970,
+    "radical_of_n_times_n_plus_a": 2,
+    "number_of_direct_candidates": 2985,
+    "proposition_1_3_candidates": [
+     4094
+    ],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 1536,
+   "a": 1024,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 8063,
+    "radical_of_n_times_n_plus_a": 30,
+    "number_of_direct_candidates": 268,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  },
+  {
+   "n": 3072,
+   "a": 1024,
+   "k": 1,
+   "certificate": {
+    "type": "root_search",
+    "szego_bound": 14264,
+    "radical_of_n_times_n_plus_a": 6,
+    "number_of_direct_candidates": 2377,
+    "proposition_1_3_candidates": [],
+    "roots_found": []
+   }
+  }
+ ],
+ "extra": {}
+}

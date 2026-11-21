@@ -1,0 +1,106 @@
+{
+ "step": "step07_k2_lemma_5_6",
+ "checkpoints": [
+  {
+   "description": "Stage A: largest n with P(n(n-1)) <= 31 (Lehmer's n_2)",
+   "ours": 1611308700,
+   "matches": true
+  },
+  {
+   "description": "Stage B: every n > 10^5 has omega_11(n(n-1)) >= 2 (Lehmer's Table IB)",
+   "ours": true,
+   "matches": true
+  },
+  {
+   "description": "Stage B: number of n with P(n(n-1)) <= 31 and omega_7(n(n-1)) <= 1",
+   "ours": 59,
+   "matches": true
+  },
+  {
+   "description": "Stage B: all these n are <= 10^5",
+   "ours": true,
+   "matches": true
+  },
+  {
+   "description": "Stage C, group 11 to 31: [number of n, number of pairs]",
+   "ours": [
+    10,
+    10
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage C, group 7: [number of n, number of a, number of pairs]",
+   "ours": [
+    13,
+    3,
+    39
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage C, group at most 5: the values of n",
+   "ours": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    16,
+    25,
+    81
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage D, group 11 to 31: P((n+a)(n+a-1)) >= 11 for all pairs",
+   "ours": true,
+   "matches": true
+  },
+  {
+   "description": "Stage D, group 11 to 31: pairs with P((n+a)(n+a-1)) >= 37, and <= 31",
+   "ours": [
+    10,
+    0
+   ],
+   "matches": true
+  },
+  {
+   "description": "Stage D, group 11 to 31: of these, P((n+a)(n+a-1)) <= P((n-3)(n-2))",
+   "ours": 0,
+   "matches": true
+  },
+  {
+   "description": "Stage D, group 11 to 31: pairs with P >= 37 passing Lemma 5.4(i)",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "Stage D, group 11 to 31: pairs with P <= 31 passing Lemma 5.4(iii)",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "Stage D, group 11 to 31: survivors",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "Stage D, group 7: survivors",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "Stage D, group at most 5: survivors with n = 81",
+   "ours": [],
+   "matches": true
+  },
+  {
+   "description": "Stage D, group at most 5: number of survivors with n != 81",
+   "ours": 0,
+   "matches": true
+  }
+ ],
+ "certificates": [],
+ "extra": {}
+}

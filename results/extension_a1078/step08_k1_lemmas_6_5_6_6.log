@@ -1,0 +1,49 @@
+Part A (P(n) >= 5): 61776 pairs (n, a) before the filters
+Part A (P(n) >= 5): 25712 pairs after Lemma 6.3
+Part A (P(n) >= 5): 25712 pairs after Lemma 6.2
+Part A (P(n) >= 5): 111 pairs after Lemma 6.1
+Part A (P(n) >= 5): 28 pairs after Lemma 5.4(i)
+Part A (P(n) >= 5): 3 pairs after Lemma 5.4(ii)
+COUNT  Part A: pairs with 11 <= P(n) <= 31 before Lemma 5.4: 1
+COUNT  Part A: pairs with 11 <= P(n) <= 31 after Lemma 5.4: []
+COUNT  Part A: the set S-tilde: [(1280, 1024), (5120, 1024), (15360, 1024)]
+[certificate] (n, a, k) = (1280, 1024, 1): {'type': 'root_search', 'szego_bound': 7020, 'radical_of_n_times_n_plus_a': 30, 'number_of_direct_candidates': 234, 'proposition_1_3_candidates': [], 'roots_found': []}
+[certificate] (n, a, k) = (5120, 1024, 1): {'type': 'root_search', 'szego_bound': 22483, 'radical_of_n_times_n_plus_a': 30, 'number_of_direct_candidates': 749, 'proposition_1_3_candidates': [], 'roots_found': []}
+[certificate] (n, a, k) = (15360, 1024, 1): {'type': 'root_search', 'szego_bound': 63473, 'radical_of_n_times_n_plus_a': 30, 'number_of_direct_candidates': 2115, 'proposition_1_3_candidates': [], 'roots_found': []}
+
+Part B (n = 2^alpha 3^beta > 3): 4914 pairs (n, a) before the filters
+Part B (n = 2^alpha 3^beta > 3): 4776 pairs after Lemma 6.3
+Part B (n = 2^alpha 3^beta > 3): 4776 pairs after Lemma 6.2
+Part B (n = 2^alpha 3^beta > 3): 871 pairs after Lemma 6.1
+Part B (n = 2^alpha 3^beta > 3): 220 pairs after Lemma 5.4(i)
+Part B (n = 2^alpha 3^beta > 3): 19 pairs after Lemma 5.4(ii)
+COUNT  Part B: number of pairs, without the p = 3 condition of Lemma 5.4(ii): 21
+COUNT  Part B: pairs with n > 300 and n != 512, without the p = 3 condition: [(1024, 1024), (1536, 1024), (3072, 1024)]
+COUNT  Part B: the values of a for n = 512, with the p = 3 condition: [1024, 1056]
+Part B: with the full Lemma 5.4(ii) we keep 19 pairs. These get certificates.
+Part B: pairs with n > 300 and n != 512 among them: [(1024, 1024), (1536, 1024), (3072, 1024)]
+[certificate] (n, a, k) = (4, 1020, 1): {'type': 'factorisation', 'factor_degrees': [4]}
+[certificate] (n, a, k) = (8, 1016, 1): {'type': 'factorisation', 'factor_degrees': [8]}
+[certificate] (n, a, k) = (12, 1077, 1): {'type': 'factorisation', 'factor_degrees': [12]}
+[certificate] (n, a, k) = (16, 1008, 1): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (16, 1064, 1): {'type': 'factorisation', 'factor_degrees': [16]}
+[certificate] (n, a, k) = (24, 1034, 1): {'type': 'factorisation', 'factor_degrees': [24]}
+[certificate] (n, a, k) = (32, 1048, 1): {'type': 'factorisation', 'factor_degrees': [32]}
+[certificate] (n, a, k) = (64, 1070, 1): {'type': 'factorisation', 'factor_degrees': [64]}
+[certificate] (n, a, k) = (128, 1015, 1): {'type': 'factorisation', 'factor_degrees': [128]}
+[certificate] (n, a, k) = (128, 1024, 1): {'type': 'factorisation', 'factor_degrees': [128]}
+[certificate] (n, a, k) = (192, 1023, 1): {'type': 'factorisation', 'factor_degrees': [192]}
+[certificate] (n, a, k) = (256, 1019, 1): {'type': 'factorisation', 'factor_degrees': [256]}
+[certificate] (n, a, k) = (256, 1024, 1): {'type': 'factorisation', 'factor_degrees': [256]}
+[certificate] (n, a, k) = (256, 1040, 1): {'type': 'factorisation', 'factor_degrees': [256]}
+[certificate] (n, a, k) = (512, 1024, 1): {'type': 'root_search', 'szego_bound': 3823, 'radical_of_n_times_n_plus_a': 6, 'number_of_direct_candidates': 637, 'proposition_1_3_candidates': [], 'roots_found': []}
+[certificate] (n, a, k) = (512, 1056, 1): {'type': 'root_search', 'szego_bound': 3874, 'radical_of_n_times_n_plus_a': 14, 'number_of_direct_candidates': 276, 'proposition_1_3_candidates': [], 'roots_found': []}
+[certificate] (n, a, k) = (1024, 1024, 1): {'type': 'root_search', 'szego_bound': 5970, 'radical_of_n_times_n_plus_a': 2, 'number_of_direct_candidates': 2985, 'proposition_1_3_candidates': [4094], 'roots_found': []}
+[certificate] (n, a, k) = (1536, 1024, 1): {'type': 'root_search', 'szego_bound': 8063, 'radical_of_n_times_n_plus_a': 30, 'number_of_direct_candidates': 268, 'proposition_1_3_candidates': [], 'roots_found': []}
+[certificate] (n, a, k) = (3072, 1024, 1): {'type': 'root_search', 'szego_bound': 14264, 'radical_of_n_times_n_plus_a': 6, 'number_of_direct_candidates': 2377, 'proposition_1_3_candidates': [], 'roots_found': []}
+
+COUNT  (n, a) = (896, 979): candidates left by Proposition 1.3 (paper: xi = 2770, not a root): []
+COUNT  (n, a) = (512, 512): candidates left by Proposition 1.3 (paper: xi = 2046, not a root): [2046]
+NOTE: the paper checks '128 possible values of xi' for (400, 624) but does not say
+exactly how they are counted. We report the number of multiples of Rad(n(n+a)) in (0, B].
+COUNT  (n, a) = (400, 624): number of candidate xi checked (reading uncertain): 270
