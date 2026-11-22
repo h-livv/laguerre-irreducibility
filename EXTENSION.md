@@ -9,7 +9,7 @@ Combined with Theorem 1.1, for 0 ≤ a ≤ 1078 the exceptions are n = 2 with a 
 (2 ≤ m ≤ 32), and (n, a) = (4, 5), (4, 23).
 
 This is not an independent proof. It rests on the same assumptions as the a ≤ 1000
-reproduction (see [README.md](README.md#what-is-imported-not-verified)): the imported results
+reproduction (see [DOCUMENTATION.md](DOCUMENTATION.md#what-is-imported-not-verified)): the imported results
 of the literature and the proofs of the filter lemmas. Here those proofs are read with
 a ≤ 1078 in place of a ≤ 1000, and every place where they use the bound was checked.
 

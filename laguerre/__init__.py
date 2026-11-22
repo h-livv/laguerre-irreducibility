@@ -1,6 +1,7 @@
 """
 Library code for reproducing Das-Dutta-Laishram-Nair (arXiv 2610.10614):
-irreducibility of the generalised Laguerre polynomials L_n^(a)(x) for 50 < a <= 1000.
+irreducibility of the generalised Laguerre polynomials L_n^(a)(x) for 50 < a <= 1000,
+and its extension to 1000 < a <= 1078 (extension_a1078.py, EXTENSION.md).
 
 Modules (read them in this order):
 

@@ -18,9 +18,9 @@ bound "is not intended to be sharp". This script asks how far the proof goes UNC
 
   Part 3  Summary. results/extension_a1078/summary.md: verdict, audit table, certificates.
 
-What is assumed is exactly what the a <= 1000 reproduction assumes (README, "What is imported,
-not verified"): the imported results of the literature, and the PROOFS of the filter lemmas,
-whose numerical hypotheses are the ones audited in Part 1.
+What is assumed is exactly what the a <= 1000 reproduction assumes (DOCUMENTATION.md,
+"What is imported, not verified"): the imported results of the literature, and the PROOFS of
+the filter lemmas, whose numerical hypotheses are the ones audited in Part 1.
 
 Run:  $SAGE_PYTHON extension_a1078.py
 """

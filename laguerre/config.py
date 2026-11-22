@@ -3,6 +3,8 @@ Constants shared by every script.
 
 The paper proves its theorem for A_MIN < a <= A_MAX with A_MIN = 50 and A_MAX = 1000.
 The range of a is read from here everywhere, so the scripts can be re-run with another A_MAX.
+extension_a1078.py does that for 1000 < a <= 1078: it sets A_MIN and A_MAX at run time,
+after checking that every use of a <= 1000 in the proofs still holds (see EXTENSION.md).
 
 WARNING: the constants in the second block below are NOT free parameters. They are numbers
 that the paper derives from a <= 1000. If you change A_MAX, the lemmas that use them are no

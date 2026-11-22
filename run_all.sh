@@ -7,9 +7,10 @@
 #
 # SAGE_PYTHON is the Python interpreter that can "import sage". It defaults to "sage -python".
 # A conda/mamba installation of Sage has no "-python" option; there, point SAGE_PYTHON at the
-# "python" inside the Sage environment (see README.md, "How to run").
+# "python" inside the Sage environment (see DOCUMENTATION.md, "How to run").
 #
 # Each step writes results/<step>.log and results/<step>.json; step 9 writes results/summary.md.
+# The last command, the extension to a <= 1078, writes to results/extension_a1078/.
 
 set -e                      # stop at the first step that crashes
 cd "$(dirname "$0")"        # always run from the repository root
@@ -31,3 +32,6 @@ $SAGE_PYTHON tests/test_properties.py
 
 # Step 11: the one-page deliverable, results/deliverable.html.
 $SAGE_PYTHON step11_deliverable_page.py
+
+# The extension to 1000 < a <= 1078 (EXTENSION.md), written to results/extension_a1078/.
+$SAGE_PYTHON extension_a1078.py

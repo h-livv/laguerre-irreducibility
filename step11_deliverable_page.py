@@ -54,7 +54,7 @@ IMPORTS = [
     "The proofs of the filter lemmas 4.1–4.3, 5.1, 5.3, 5.4, 6.1–6.3 and of Proposition 1.3.",
 ]
 
-# Findings that are not checkpoint differences (see README.md, "Results").
+# Findings that are not checkpoint differences (see DOCUMENTATION.md, "Results").
 OTHER_FINDINGS = [
     ("Lemma 6.6, the count 366",
      "Reproduced exactly only when the p = 3 condition of Lemma 5.4(ii) is left out. With it, 296 pairs "
